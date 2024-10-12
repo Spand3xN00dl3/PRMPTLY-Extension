@@ -1,26 +1,89 @@
-<!DOCTYPE html>
-<html lang='en'>
+<!-- <!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>AI Prompt Engineer</title>
-  <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap' rel='stylesheet'>
-  <link rel='stylesheet' href='styles.css'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRMPTLY Extension</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #001F3F;
+            color: #FFFFFF;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #FFA500;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #FFA500;
+            color: #001F3F;
+            border: none;
+            cursor: pointer;
+        }
+        #suggestions, #improvedPrompt {
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-  <div class='container'>
-    <h1>AI Prompt Engineer</h1>
-    <textarea id='promptInput' placeholder='Enter your AI prompt here...'></textarea>
-    <button id='analyzeButton'>Analyze Prompt</button>
-    <div id='suggestions' class='hidden'>
-      <h2>Suggestions:</h2>
-      <ul id='suggestionsList'></ul>
+    <div class="container">
+        <h1>AI Prompt Engineer</h1>
+        <textarea id="promptInput" placeholder="Enter your prompt here..."></textarea>
+        <button id="analyzeButton">Analyze Prompt</button>
+        <div id="suggestions">
+            <h2>Suggestions:</h2>
+            <ul id="suggestionsList"></ul>
+        </div>
+        <div id="improvedPrompt">
+            <h2>Improved Prompt:</h2>
+            <p id="improvedPromptText"></p>
+        </div>
     </div>
-    <div id='improvedPrompt' class='hidden'>
-      <h2>Improved Prompt:</h2>
-      <p id='improvedPromptText'></p>
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRMPTLY Extension</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Prompt Engineer</h1>
+        <textarea id="promptInput" placeholder="Enter your prompt here..."></textarea>
+        <button id="analyzeButton">Analyze Prompt</button>
+        <div id="suggestions" class="hidden">
+            <h2>Suggestions:</h2>
+            <ul id="suggestionsList"></ul>
+        </div>
+        <div id="improvedPrompt" class="hidden">
+            <h2>Improved Prompt:</h2>
+            <p id="improvedPromptText"></p>
+        </div>
     </div>
-  </div>
-  <script src='popup.js'></script>
+    <script src="popup.js"></script>
 </body>
 </html>
