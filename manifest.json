@@ -3,13 +3,20 @@
   "name": "PRMPTLY Extension",
   "description": "extension for PRMPTLY",
   "version": "1.0",
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
-    "default_popup": "index.html",
-    "default_icon": "logo.png"
+    "default_popup": "popup.html",
+    "default_icon": "images/logo.png"
   },
   "content_scripts": [
     {
-      "js": ["scripts/content.js"],
+      "js": ["content.js"],
       "matches": [
         "https://developer.chrome.com/docs/extensions/*",
         "https://developer.chrome.com/docs/webstore/*"
