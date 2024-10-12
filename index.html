@@ -1,5 +1,26 @@
-<html>
-    <body>
-        prmplty extension is here
-    </body>
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>AI Prompt Engineer</title>
+  <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap' rel='stylesheet'>
+  <link rel='stylesheet' href='styles.css'>
+</head>
+<body>
+  <div class='container'>
+    <h1>AI Prompt Engineer</h1>
+    <textarea id='promptInput' placeholder='Enter your AI prompt here...'></textarea>
+    <button id='analyzeButton'>Analyze Prompt</button>
+    <div id='suggestions' class='hidden'>
+      <h2>Suggestions:</h2>
+      <ul id='suggestionsList'></ul>
+    </div>
+    <div id='improvedPrompt' class='hidden'>
+      <h2>Improved Prompt:</h2>
+      <p id='improvedPromptText'></p>
+    </div>
+  </div>
+  <script src='popup.js'></script>
+</body>
 </html>
