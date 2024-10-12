@@ -24,7 +24,7 @@ if (article) {
 // content.js
 
 let prompts = [];
-const API_KEY = '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'; // Replace with your actual OpenAI API key
+const API_KEY = 'your_openai_api_key_here'; // Replace with your actual OpenAI API key
 const API_ENDPOINT = 'https://api.openai.com/v1/chat/completions';
 
 // Function to listen for new prompts
